@@ -1,0 +1,7 @@
+name,category_id,price,stock,description
+Pro Mechanical Keyboard,672f714c-4122-4366-b946-bf8b914d4a5c,129.99,50,Tactile switches with RGB backlight
+Wireless Dev Mouse,672f714c-4122-4366-b946-bf8b914d4a5c,79.5,100,Ergonomic mouse for long coding sessions
+4K Monitor,672f714c-4122-4366-b946-bf8b914d4a5c,399.99,20,Ultra HD monitor perfect for developers
+Free Bad Product,672f714c-4122-4366-b946-bf8b914d4a5c,-10,5,This will fail because price is negative
+Broken Stock Item,672f714c-4122-4366-b946-bf8b914d4a5c,50,not_a_number,This will fail because stock is invalid
+Missing Category Item,invalid-uuid-here-123,99.99,10,This will fail because the category ID does not exist
