@@ -40,9 +40,9 @@ src/
 ├── config/           # Django project settings, wsgi, asgi, urls
 └── manage.py
 
+```
 
-
-**⚙️ Getting Started
+## ⚙️ Getting Started
 Prerequisites
 Python 3.12+
 
@@ -52,46 +52,53 @@ PostgreSQL (or use SQLite for quick local setup)
 
 Installation & Setup
 Clone the repository:
-
-Bash
+```text
 git clone [https://github.com/Jemmal35/e-commerce-backend-multi-vendor.git](https://github.com/Jemmal35/e-commerce-backend-multi-vendor.git)
 cd e-commerce-backend-multi-vendor
+```
 Create and activate a virtual environment:
+```text
 
-Bash
 python -m venv venv
 # On Windows:
 venv\Scripts\activate
 # On macOS/Linux:
 source venv/bin/activate
+```
 Install dependencies:
-
-Bash
+```text
 pip install -r requirements.txt
+```
 Configure Environment Variables:
 Create a .env file in the root directory based on your configuration needs:
 
 Code snippet
+```text
 DEBUG=True
 SECRET_KEY=your-super-secret-key-here
 DATABASE_URL=sqlite:///db.sqlite3
 STRIPE_SECRET_KEY=your_stripe_secret_key
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
+```
 Run Database Migrations:
-
-Bash
+```text
 python src/manage.py migrate
 Start the Development Server:
-
-Bash
+```
+```text
 python src/manage.py runserver
+```
+Access the API at http://localhost:8000/api/v1/
+
 🐳 Running with Docker
 To run the complete containerized stack (Web, Database, Redis, Celery):
 
-Bash
+```text
 docker-compose up --build
-
+```
 Run migrations inside the container (in a new terminal tab):
 
-Bash
+```text
 docker-compose exec web python src/manage.py migrate
+```
+Access the API at http://localhost:8000/api/v1/
